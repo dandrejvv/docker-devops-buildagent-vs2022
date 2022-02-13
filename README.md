@@ -23,7 +23,7 @@ I take no credit for any of this apart from making a few tweaks and bringing the
 
 ### Test locally
 
-> docker run -e AZP_URL=<devops_url> -e AZP_TOKEN=<devops_pat> buildtools:latest
+> docker run -e AZP_URL=`<devops_url>` -e AZP_TOKEN=`<devops_pat>` buildtools:latest
 
 ### Docker Environment Variables
 
@@ -40,15 +40,15 @@ _Source from [1] in references list below_
 
 ### Tag for repo
 
-> docker tag buildtools:latest <acr-server>/buildtools:latest
+> docker tag buildtools:latest `<acr-server>`/buildtools:latest
 
 ### Login to Azure repo
 
 > az login
 >
-> az acr login --name <acr-name>
+> az acr login --name `<acr-name>`
 >
-> docker push <acr-server>/buildtools:latest
+> docker push `<acr-server>`/buildtools:latest
 
 ## Sources
 
