@@ -45,7 +45,9 @@ _Source from [1] in references list below_
 ### Login to Azure repo
 
 > az login
+>
 > az acr login --name <acr-name>
+>
 > docker push <acr-server>/buildtools:latest
 
 ## Sources
