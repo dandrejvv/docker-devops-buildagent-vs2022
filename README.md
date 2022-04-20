@@ -19,6 +19,8 @@ I take no credit for any of this apart from making a few tweaks and bringing the
 
 ### Build
 
+Before getting started, make sure you're running Windows containers on docker.
+
 > docker build -t buildtools:latest -m 2GB .
 
 ### Test locally
