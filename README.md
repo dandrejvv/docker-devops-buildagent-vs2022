@@ -31,6 +31,8 @@ Try and run the command with the `--network "Default Switch"` parameter.
 
 > docker build -t buildtools:latest -m 2GB . --network "Default Switch"
 
+_Source from [3] in references list below_
+
 ### Test locally
 
 > docker run -e AZP_URL=`<devops_url>` -e AZP_TOKEN=`<devops_pat>` buildtools:latest
@@ -64,3 +66,4 @@ _Source from [1] in references list below_
 
 1. [Run a self-hosted agent in Docker](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/docker?view=azure-devops#windows)
 2. [Stack-overflow: SSDT and vstest capability missing in container when installing Visual Studio Build Tools](https://stackoverflow.com/a/60191980/802755)
+3. [Stack-overflow: PowerShell's Invoke-WebRequest not working within a Docker Container](https://stackoverflow.com/a/68548447/802755)
