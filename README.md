@@ -23,6 +23,14 @@ Before getting started, make sure you're running Windows containers on docker.
 
 > docker build -t buildtools:latest -m 2GB .
 
+If you get an error saying that...
+
+> Invoke-WebRequest : The remote name could not be resolved: 'aka.ms'
+
+Try and run the command with the `--network "Default Switch"` parameter.
+
+> docker build -t buildtools:latest -m 2GB . --network "Default Switch"
+
 ### Test locally
 
 > docker run -e AZP_URL=`<devops_url>` -e AZP_TOKEN=`<devops_pat>` buildtools:latest
