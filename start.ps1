@@ -54,6 +54,9 @@ try
     --work "$(if (Test-Path Env:AZP_WORK) { ${Env:AZP_WORK} } else { '_work' })" `
     --replace
 
+  Write-Host "Ensuring git longpahts..."
+  git config --system core.longpaths true
+
   Write-Host "4. Running Azure Pipelines agent..." -ForegroundColor Cyan
 
   .\run.cmd

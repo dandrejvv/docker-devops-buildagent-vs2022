@@ -23,6 +23,8 @@ RUN git --version --build-options
 RUN choco install -y nuget.commandline
 RUN nuget help
 
+RUN New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
+
 COPY start.ps1 .
 
 CMD ["powershell"]
